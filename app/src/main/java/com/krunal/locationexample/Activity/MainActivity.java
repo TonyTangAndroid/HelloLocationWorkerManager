@@ -1,48 +1,23 @@
 package com.krunal.locationexample.Activity;
 
 import android.Manifest;
-import android.app.job.JobInfo;
-import android.app.job.JobScheduler;
-import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.location.LocationManager;
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.work.ExistingPeriodicWorkPolicy;
-import androidx.work.ExistingWorkPolicy;
-import androidx.work.OneTimeWorkRequest;
-import androidx.work.PeriodicWorkRequest;
-import androidx.work.WorkManager;
-
-import com.krunal.locationexample.Database.LogsEntity;
-import com.krunal.locationexample.Database.Repository;
-import com.krunal.locationexample.Service.GPSTracker;
-import com.krunal.locationexample.Service.LocationWorker;
 import com.krunal.locationexample.Utility.ClsCheckLocation;
 
 import com.krunal.locationexample.R;
 import com.krunal.locationexample.Utility.ClsGlobal;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.concurrent.TimeUnit;
-
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
-
-import static com.krunal.locationexample.Utility.ClsGlobal.getCurruntDateTime;
-import static com.krunal.locationexample.Utility.ClsGlobal.getEntryDateFormat;
 
 public class MainActivity extends AppCompatActivity {
 

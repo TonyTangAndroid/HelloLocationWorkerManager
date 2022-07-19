@@ -2,13 +2,11 @@ package com.krunal.locationexample.Service;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 import androidx.work.Worker;
 import androidx.work.WorkerParameters;
-
-import com.krunal.locationexample.Utility.ClsGlobal;
 
 public class LocationWorker extends Worker {
 
