@@ -27,7 +27,7 @@
 
     <service
       android:name="com.krunal.locationexample.Service.GPSTracker"
-      android:exported="false"></service>
+      android:exported="false" />
 
     <service
       android:name=".Service.LocationJob"
